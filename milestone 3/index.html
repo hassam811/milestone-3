@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> static Interactive Resume </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="heading"><strong>Dynamic Interactive Resume</strong></div>
+<div class="main">
+    <form id="Resumefoam">
+        <div class="personal"><strong>Personal info</strong></div>
+        <label for="picture" class="inputname" id="upload"><strong>upload picture</strong></label>
+        <input type="file" name="picture" id="picture" class="forpic" accept="image">  <br> <br>
+
+        <label for="name" class="inputname"><strong>Name</strong></label>
+        <input type="text" name="name" id="name" required> <br> <br>
+
+        <label for="email" class="inputemail"><strong>Email</strong></label>
+        <input type="emaail" name="Email" id="Email"required> <br> <br>
+
+        <label for="Phone" class="inputname"><strong>Phone</strong></label>
+        <input type="number" name="Phone" id="Phone" required> <br> <br>
+
+        <label for="Address" class="inputname"><strong>Address</strong></label>
+        <input type="text" name="Address" id="Address" required> <br><br>
+
+    <div class="Personal"><strong></strong></div>
+    <label for="Skills" class="inputname"><Strong>Skills</Strong></label>
+    <input type="text" name="Skills" id="Skills"required> <br><br>
+
+    <div class="Personal"><strong></strong></div>
+    <label for="Education" class="inputname"><strong>Education</strong></label>
+    <textarea name="Education" id="Education"></textarea required> <br><br>
+
+        <div class="Personal"><strong></strong></div>
+        <label for="Experience" class="inputname"><strong>Experience</strong></label>
+        <textarea name="Experience" id="Experience"></textarea required> <br><br>
+
+            <input type="Submit" class="inputname" value="Submit">
+</form>
+</div>
+
+<div id="rsumeOutput"></div>
+ Resume will be greneated below
+ 
+ <h1 class="resumeinfo">resumeinfo</h1>
+  <img id="displayPicture">
+<h2 id="displayName"></h2>
+<p id="displayPhone"></p>
+<p id="displayEmail"></p>
+<p id="displayAdress"></p>
+
+<h1 class="resumeinfo">skill</h1>
+<p id="displaySkill"></p>
+
+<h1 class="resumeinfo">Education</h1>
+<p id="displayEducation"></p>
+
+<h1 class="resumeinfo">Experience</h1>
+<p id="displayExperience"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
